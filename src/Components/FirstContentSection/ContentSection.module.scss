@@ -1,0 +1,53 @@
+@import "../../index.scss";
+.contentSection {
+  padding: 96px 0;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.badges {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.badge {
+  &:not(:last-of-type) {
+    margin-right: 8px;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // width: 547px;
+}
+.title {
+  color: $black-primary;
+  align-self: stretch;
+  margin-bottom: 32px;
+  @include inter-48-bold;
+}
+.subtitle {
+  color: $black-secondary;
+  align-self: stretch;
+  margin-bottom: 32px;
+  @include inter-24-regular;
+}
+.sectionImage {
+  // width: 600px;
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 767px) {
+  .contentSection {
+    padding: 40px 0;
+  }
+}
